@@ -1,8 +1,8 @@
 <div align="center">
-  <h1>Corporate Web Page 🌐</h1> <img src="https://github.com/deryaxacar/html-css-exercises/blob/main/images.png" alt="html-css Logo" width="110"></br></br>
+  <h1>Corporate Web Page 🌐</h1>  <a target="blank"><img src="https://github.com/deryaxacar/DraggableCalculator/blob/main/html-css-js.png" height="110" width="110" /></a></br></br>
 </div>
 
-<p> This project is a single-page interface design created for modern corporate websites. Built with HTML and CSS, it presents corporate introduction sections, service cards, content areas, information panels, and user-interaction components in a clean and well-structured layout on a single screen.</p>
+<p> This project is a single-page interface design created for modern corporate websites. Built with HTML, CSS and Vanilla JS, it presents corporate introduction sections, service cards, content areas, information panels, and user-interaction components in a clean and well-structured layout on a single screen.</p>
 
 ---
 
