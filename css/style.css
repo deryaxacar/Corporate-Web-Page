@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #2c2c2c;
+}
+
+header,
+section,
+footer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header {
+    position: relative;
+    background: url('../img/bg-1.png') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 20px 60px;
+}
+
+header .content {
+    background: rgba(253, 250, 245, 0.9);
+    padding: 40px 60px 60px 60px;
+
+    max-width: 530px;
+    text-align: left;
+    margin-left: 50px;
+}
+
+header h1 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 550;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #000000;
+}
+
+header h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    color: #000000;
+}
+
+header p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    text-align: left;
+    color: #000000;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background: #fd6d15;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 15px 70px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e64e00;
+}
+
+section {
+    text-align: left;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 40px 30px;
+    margin: 40px 70px;
+}
+
+section h2 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 550;
+    font-size: 3rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+section h3 {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.team p {
+    color: #FF6B35;
+}
+
+.member {
+    padding: 20px;
+    width: 310px;
+}
+
+.member img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.advantage {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #FF6B35;
+    background-color: #FF6B35;
+    height: 1px;
+}
+
+/* Avantajlar */
+
+.advantage {
+    background-color: #f5f1e8;
+    padding: 85px 8%;
+    margin: 0px;
+}
+
+.avantaj-container {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 90px;
+}
+
+.avantaj-left h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #1a1a1a;
+}
+
+.avantaj-right {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.avantaj-item {
+    display: flex;
+    gap: 22px;
+}
+
+.avantaj-item .icon {
+    font-size: 42px;
+    min-width: 55px;
+}
+
+.avantaj-item h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+    color: #FF6B35;
+}
+
+.avantaj-item p {
+    font-size: 20px;
+    line-height: 1.85;
+    color: #4a4a4a;
+}
+
+.adv-item {
+    flex: 1;
+    min-width: 250px;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.expertise {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 0;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 85px 8%;
+    margin: 0px;
+    background-color: #E1DFD9;
+}
+
+.expertise img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.expertise h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+}
+
+.expertise ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expertise ul li {
+    margin-left: 15px;
+    margin-bottom: 12px;
+    color: #000000;
+
+}
+
+.expertise p {
+    font-size: 20px;
+    max-width: 400px;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.expertise ul li::marker {
+    color: #000000;
+}
+
+.expertise ul li::before {
+    content: "•";
+    color: #000000;
+    margin-right: 10px;
+}
+
+/* Yorumlar */
+.reviews {
+    background: #2b2b2b;
+    padding: 85px 8%;
+}
+
+.reviews h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.reviews .subtitle {
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    color: #FF6B35;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.review .text {
+    font-size: 13.5px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: 18px;
+}
+
+.review .author {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+/* İletişim */
+.contact {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=800&fit=crop') center/cover;
+    padding: 95px 8%;
+    color: white;
+}
+
+.contact-content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 55px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.contact-grid h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+    margin-bottom: 14px;
+}
+
+.contact-grid p {
+    font-size: 13.5px;
+    line-height: 1.85;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+
+footer {
+    background: url('../img/contact.png') no-repeat center center/cover;
+    padding: 60px 20px;
+    text-align: left;
+    position: relative;
+}
+
+footer .overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    display: inline-block;
+}
+
+footer p {
+    margin: 10px 0;
+}
